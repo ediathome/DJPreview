@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string># Wir $1
+
+## Orientieren
+* Fachkompetenz
+	* $2
+
+* Selbstkompetenz
+	* $3
+
+* Methodenkompetenz
+	* $4
+
+* Sozialkompetenz
+	* $5
+	
+## Informieren
+* Fachkompetenz
+	* $6
+
+* Selbstkompetenz
+	* $7
+
+* Methodenkompetenz	
+	* $8
+
+* Sozialkompetenz		
+	* $9
+
+## Planen
+* Fachkompetenz
+	* $10
+
+* Selbstkompetenz
+	* $11
+
+* Methodenkompetenz
+	* $12
+
+* Sozialkompetenz
+	* $13
+
+## Durchführen
+* Fachkompetenz
+	* $14
+
+* Selbstkompetenz
+	* $15
+	
+* Methodenkompetenz
+	* $16
+
+* Sozialkompetenz	
+	* $17
+
+## Bewerten
+* Fachkompetenz
+	* $18
+	
+* Selbstkompetenz
+	* $19
+
+* Methodenkompetenz
+	* $20
+
+* Sozialkompetenz
+	* $21
+
+## Reflektieren/Regulieren
+* Fachkompetenz
+	* $22
+
+* Selbstkompetenz
+	* $23
+
+* Methodenkompetenz
+	* $24
+
+* Sozialkompetenz
+	* $25</string>
+	<key>name</key>
+	<string>Lernsituationsbeschreibung</string>
+	<key>tabTrigger</key>
+	<string>lsb</string>
+	<key>uuid</key>
+	<string>6BFC5C82-D622-423B-B46D-9775FC270BF9</string>
+</dict>
+</plist>

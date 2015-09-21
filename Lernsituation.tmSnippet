@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>## Wir $1
+* Fachkompetenzen
+	* $2
+
+* Selbst-, Sozial-, Methodenkompetenzen
+	* $3
+
+* Didaktik, Organisation, Verantwortlichkeit
+	* $4
+
+* Verknüpfung
+	* $5
+	
+* Benotung
+	* $6
+
+* Stunden
+	* $7 Stunden
+	
+</string>
+	<key>name</key>
+	<string>Lernsituation</string>
+	<key>tabTrigger</key>
+	<string>ls</string>
+	<key>uuid</key>
+	<string>D3B4420E-A9F6-408E-9B9D-5DF63C78A8A7</string>
+</dict>
+</plist>

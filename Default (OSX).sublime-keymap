@@ -1,0 +1,5 @@
+[
+    { 
+        "keys": ["super+r"], "command": "dj_preview"
+    }
+]
