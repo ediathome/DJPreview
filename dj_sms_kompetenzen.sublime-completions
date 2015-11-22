@@ -1,5 +1,5 @@
 {
-  "scope": "source.dj lernsituation markup.list.sms_kompetenz",
+  "scope": "markup.list.sms_kompetenz",
   "completions":
   [
     { "trigger": "k\takzeptieren", "contents": "akzeptieren" },
