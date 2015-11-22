@@ -36,6 +36,10 @@
 			<string>markup.heading.1.title.lernfeld</string>
 			<key>settings</key>
 			<dict>
+				<key>fontSize</key>
+				<integer>36</integer>
+        <key>fontStyle</key>
+        <string>bold</string>
 				<key>foreground</key>
 				<string>#FF0000</string>
 			</dict>
