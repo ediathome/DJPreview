@@ -1,0 +1,15 @@
+%YAML 1.2
+---
+name: Didaktische Jahresplanung
+file_extensions: [md]
+scope: source.dj
+
+contexts:
+  main:
+    - match: ^##
+      scope: title.lernsituation.dj
+    - match: \s*\* Fach.*
+      scope: dj.lernsituation.fachkompetenz.begin
+    - match: ""
+    - match: \* Selbst.*
+      push: se_me_so_kompetenzen
