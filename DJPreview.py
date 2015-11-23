@@ -39,7 +39,10 @@ class DjPreviewCommand(sublime_plugin.TextCommand):
         return tmp_fullpath
 
     def html_head(self):
-        return '<!DOCTYPE html><html lang="de"><HEAD><TITLE>DJPreview</TITLE><META http-equiv="Content-Type" content="text/html; charset=utf-8"></HEAD>'
+        h = '<!DOCTYPE html><html lang="de"><HEAD><TITLE>DJPreview</TITLE><META http-equiv="Content-Type" content="text/html; charset=utf-8">'
+        h += '<STYLE>h1 {color: red}</STYLE>'
+        h += '</HEAD>'
+        return h
 
     def html_footer(self):
         return '</html>'
