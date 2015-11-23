@@ -9,39 +9,6 @@ body {
 	margin: 4px;
 }
 
-#mdinput, #lsList {
-	margin: 8px;
-	padding: 2px;
-}
-
-#mdinput {
-	font-size: 1.0em;
-	min-width: 640px;
-	height: 320px;
-}
-
-#lsList {
-	display: none;
-	border: none;
-	font-family: Helvetica, Arial, sans-serif;
-	width: 240px;
-	float: left;
-}
-
-#lsList li {
-	border: none;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
-	text-align: center;
-	
-	width: 232px;
-	height: 2.2em;
-	overflow: hidden;
-	margin: 2px;
-	padding: 2px;
-}
-
 #preview {
 	clear: both;
 	width:98%;
@@ -54,6 +21,7 @@ footer {
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 0.8em;
 }
+
 @page {
 	margin: 30mm 15mm 2mm 15mm;
 	font-size: 12px;

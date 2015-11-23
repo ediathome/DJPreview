@@ -47,8 +47,8 @@ class DjPreviewCommand(sublime_plugin.TextCommand):
       print(css_path)
       h = '<!DOCTYPE html><html lang="de"><HEAD><TITLE>DJPreview</TITLE><META http-equiv="Content-Type" content="text/html; charset=utf-8">'
       h += '<STYLE>' + self.read_file_to_str(css_path) + '</STYLE>'
-      h += '</HEAD>'
+      h += '</HEAD><div id="preview">'
       return h
 
     def html_footer(self):
-      return '</html>'
+      return '</div></html>'
