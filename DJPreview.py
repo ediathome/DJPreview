@@ -30,6 +30,10 @@ class DjPreviewCommand(sublime_plugin.TextCommand):
         f.write(output_str)
       True
 
+    def read_file_to_str(self, file_name):
+      with codecs.open(file_name, 'r', encoding='utf-8')as f:
+        return f.read()
+
     def temp_preview_path(self, view):
         tmp_filename = '%s.html' % view.id()
         tmp_dir = tempfile.gettempdir()
@@ -39,10 +43,12 @@ class DjPreviewCommand(sublime_plugin.TextCommand):
         return tmp_fullpath
 
     def html_head(self):
-        h = '<!DOCTYPE html><html lang="de"><HEAD><TITLE>DJPreview</TITLE><META http-equiv="Content-Type" content="text/html; charset=utf-8">'
-        h += '<STYLE>h1 {color: red}</STYLE>'
-        h += '</HEAD>'
-        return h
+      css_path = os.path.dirname(__file__) + '/css/default_style.css'
+      print(css_path)
+      h = '<!DOCTYPE html><html lang="de"><HEAD><TITLE>DJPreview</TITLE><META http-equiv="Content-Type" content="text/html; charset=utf-8">'
+      h += '<STYLE>' + self.read_file_to_str(css_path) + '</STYLE>'
+      h += '</HEAD>'
+      return h
 
     def html_footer(self):
-        return '</html>'
+      return '</html>'
