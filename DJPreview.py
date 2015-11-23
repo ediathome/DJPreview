@@ -18,14 +18,16 @@ class DjPreviewCommand(sublime_plugin.TextCommand):
     def create_html_tmp_file(self, md_string):
       markdowner = Markdown()
       tmp_name = self.temp_preview_path(self.view)
-      output_str = markdowner.convert(md_string)
+      output_str = self.html_head()
+      output_str += markdowner.convert(md_string)
+      output_str += self.html_footer()
       self.write_str_to_file(tmp_name, output_str)
       webbrowser.open("file://" + tmp_name)
       True
 
     def write_str_to_file(self, file_name, output_str):
       with codecs.open(file_name, 'w', encoding='utf-8')as f:
-              f.write(output_str)
+        f.write(output_str)
       True
 
     def temp_preview_path(self, view):
@@ -35,3 +37,9 @@ class DjPreviewCommand(sublime_plugin.TextCommand):
             os.makedirs(tmp_dir)
         tmp_fullpath = os.path.join(tmp_dir, tmp_filename)
         return tmp_fullpath
+
+    def html_head(self):
+        return '<!DOCTYPE html><html lang="de"><HEAD><TITLE>DJPreview</TITLE><META http-equiv="Content-Type" content="text/html; charset=utf-8"></HEAD>'
+
+    def html_footer(self):
+        return '</html>'
