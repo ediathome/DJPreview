@@ -1,20 +1,9 @@
-# DJPreview
-
-Didaktische Jahresplanung **syntax highlighting** plugin and **color scheme** for Sublime Text 3 based on Markdown syntax.
-
-## Features
-
-- Schnelle Erstellung von Didaktischen Jahresplänen in Sublime Text 3
-- Basierend auf dem [Markdown Standard](https://daringfireball.net/projects/markdown/) von John Gruber
-- Kurzbefehle zum schnellen Erstellen der notwendigen Dokumentenstruktur
-- Textergänzung mit Verben-Listen für unterschiedliche Kompetenzbereichen
-
 ## SublimeText und DJPreview installieren
 
 1. [Download der aktuellen Version von SublimeText](http://www.sublimetext.com/3) (in der Regel die Version für Windows 64-Bit, für Mac oder Linux die jeweils aktuelle Version)
 2. SublimeText starten
 3. Befehl **Windows:** "Preferences -> Browse Packages" / **Mac:** "SublimeText -> Preferences -> Browse Packages" auswählen. Es öffnet sich ein Fenster im Windows Explorer bzw. Finder (Mac).
-4. Die [Zip-Datei](https://github.com/ediathome/DJPreview/archive/master.zip) herunterladen und in den soeben geöffneten Ordner 'User' entpacken. Bitte beachten Sie, dass die Dateiendung .tmSnippet erhalten bleibt.
+4. Die [Zip-Datei](http://vt-learn.de/didplanapp/tmsnippets/DJSnippets_Sublime.zip) herunterladen und in den soeben geöffneten Ordner 'User' entpacken. Bitte beachten Sie, dass die Dateiendung .tmSnippet erhalten bleibt.
 
 ## Lernfeld in SublimeText eingeben
 1. In SublimeText können nun ab sofort die Textsnippets abgerufen werden. Eine Übersicht über alle Tastenkürzel siehe unten.
@@ -28,6 +17,9 @@ Geben Sie die folgenden Kürzel, gefolgt von der Tabulator-Taste ein, um die Vor
 |__lf__     |Überschrift für ein Lernfeld |
 |__ls__     |Vorlage für eine Lernsituation im Didaktischen Jahresplan |
 |__lsb__    |Vorlage für eine Lernsituationsbeschreibung |
+
+## Farbschema
+Zur Verwendung des auf die Didaktische Jahresplanung angepassten Farbschemas wählen Sie im Menu
 
 ## Textergänzung und Wortvorschläge
 Drücken Sie strg + Leertaste, um Wortvorschläge zu erhalten. Das DJPreview-Plugin erkennt, in welchem Kontext Sie sich gerade befinden und gibt zu den momentan bearbeiteten Kompetenzen passende Verbvorschläge an.
