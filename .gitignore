@@ -6,3 +6,4 @@ tmp*
 my_config.rb
 publish
 publish_suite.rb
+*.pyc
