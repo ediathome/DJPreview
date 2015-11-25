@@ -1,5 +1,5 @@
 [
     { 
-        "keys": ["ctrl+r"], "command": "dj_preview"
+        "keys": ["ctrl+shift+r"], "command": "dj_preview"
     }
 ]
