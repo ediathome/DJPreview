@@ -22,30 +22,37 @@ footer {
 	font-size: 0.8em;
 }
 
-@page {
-	margin: 30mm 15mm 2mm 15mm;
-	font-size: 12px;
-}
+@page { size:29.7cm 21cm; margin: 2cm; }
 
 @media print {
+
+
 	#preview h2 {
+		page-break-before: always;
 		page-break-after: avoid;
-		page-break-inside: avoid;		
+		page-break-inside: avoid;
 	}
 	
 	#preview > ul {
-		display: block;
 		page-break-before: avoid;
 		page-break-inside: avoid;
+		margin-bottom: 2.0em;
 	}
 	
 	#preview > ul > li {
 		display: block;
 /*		page-break-before: avoid; */
 	}
-	#preview > ul > li {
+	#preview ul  {
 /*		page-break-after: avoid; */
 	}
+}
+
+#stunden {
+	font-family: 'Roboto Condensed', sans-serif;
+	text-align: right;
+	width: 100%;
+	font-size: 0.8em;
 }
 
 #preview h1 {
@@ -56,8 +63,10 @@ footer {
 }
 
 #preview h2 {
+	display: block;
   clear: both;
   margin-top: 2.0em;
+	margin-bottom: 0.2em;
   color: #000080;
   font-weight: bold;
   font-size: 16px;
@@ -66,6 +75,7 @@ footer {
 
 /* init style for all unordered lists inside the #preview block */
 #preview ul {
+	display: block;
 	list-style-type: none;
 	-webkit-margin-before: 0em;
 	-webkit-margin-after: 0em;
@@ -81,6 +91,14 @@ footer {
 
 #preview > ul {
 	border-top: 1px solid #ccc;
+}
+
+#preview > ul:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
 }
 
 #preview > ul > li {
@@ -152,6 +170,11 @@ footer {
 	float: left;
 	display: inline;
 	list-style-type: none;
+}
+
+#preview > ul > li:nth-child(5) > ul:after,
+#preview > ul > li:nth-child(6) > ul:after {
+	clear: both;
 }
 
 

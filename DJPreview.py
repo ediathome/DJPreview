@@ -2,8 +2,25 @@ import sublime, sublime_plugin
 import webbrowser, sys, os
 import tempfile
 import codecs
+import re
 
 from .markdown2 import Markdown
+
+def count_stunden(view):
+  std_count = 0
+  functionRegs = view.find_by_selector('markup.list.stunden')
+  pattern = re.compile(r"\d+", re.MULTILINE)
+  for r in functionRegs:
+    std_match = pattern.findall(view.substr(r))
+    if std_match:
+      std_count = std_count + addup_list(std_match)
+  return std_count
+
+def addup_list(mlist):
+  rv = 0
+  for l in mlist:
+    rv += int(l)
+  return rv
 
 class DjPreviewCommand(sublime_plugin.TextCommand):
     def run(self, edit):
@@ -17,6 +34,7 @@ class DjPreviewCommand(sublime_plugin.TextCommand):
       markdowner = Markdown()
       tmp_name = self.temp_preview_path(self.view)
       output_str = self.html_head()
+      output_str += "<div id='stunden'>" + str(count_stunden(self.view)) + " Stunden gesamt</div>"
       output_str += markdowner.convert(md_string)
       output_str += self.html_footer()
       self.write_str_to_file(tmp_name, output_str)
@@ -50,3 +68,15 @@ class DjPreviewCommand(sublime_plugin.TextCommand):
 
     def html_footer(self):
       return '</div></html>'
+
+
+class DjCountStundenInStatusListener(sublime_plugin.EventListener):
+  def on_deactived(self, view):
+    erase_status('count_stunden')
+
+  def on_modified(self, view):
+    self.display_stunden_count(view)
+
+  def display_stunden_count(self, view):
+    std_count = str(count_stunden(view))
+    view.set_status('count_stunden', std_count + " Stunden")
