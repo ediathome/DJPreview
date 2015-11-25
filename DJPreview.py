@@ -3,8 +3,6 @@ import webbrowser, sys, os
 import tempfile
 import codecs
 
-# Add the directory containing your module to the Python path (wants absolute paths)
-# sys.path.append(os.path.abspath('.'))
 from .markdown2 import Markdown
 
 class DjPreviewCommand(sublime_plugin.TextCommand):

@@ -1,6 +1,7 @@
 [
     {
-        "caption": "DJ: Vorschau",
-        "command": "dj_preview"
+        "caption": "DJ:Vorschau",
+        "command": "dj_preview",
+		"args": {}
     }
 ]

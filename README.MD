@@ -3,7 +3,7 @@
 1. [Download der aktuellen Version von SublimeText](http://www.sublimetext.com/3) (in der Regel die Version für Windows 64-Bit, für Mac oder Linux die jeweils aktuelle Version)
 2. SublimeText starten
 3. Befehl **Windows:** "Preferences -> Browse Packages" / **Mac:** "SublimeText -> Preferences -> Browse Packages" auswählen. Es öffnet sich ein Fenster im Windows Explorer bzw. Finder (Mac). ![Befehl "Browse Packages"](https://github.com/ediathome/DJPreview/blob/master/demo/windows_01_browse_packages.png)
-4. Die [Zip-Datei](http://vt-learn.de/didplanapp/tmsnippets/DJPreview.zip) herunterladen und in den soeben geöffneten Ordner 'User' entpacken. ![Entpacken der Datei mit 7Zip](https://github.com/ediathome/DJPreview/blob/master/demo/windows_06_extract_zip.png)
+4. Die [Zip-Datei](http://vt-learn.de/didplanapp/tmsnippets/DJPreview.zip) herunterladen und in den soeben geöffneten Ordner 'Packages' entpacken. ![Entpacken der Datei mit 7Zip](https://github.com/ediathome/DJPreview/blob/master/demo/windows_06_extract_zip.png)
 
 5. In Sublime Text müssen Sie nun noch das Farbschema auswählen über "Preferences" -> "Color Scheme" -> "User" -> "DJPreview" -> "dj_standard" ![Auswählen des Farbschemas](https://github.com/ediathome/DJPreview/blob/master/demo/windows_07_color_scheme.png)
 6. Außerdem müssen Sie eventuell noch die Syntax auswählen. Klicken Sie dazu im Fenster unten rechts und wählen "Didaktische Jahresplanung" aus.
